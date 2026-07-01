@@ -1,0 +1,445 @@
+/* ===========================
+   SANTOSH NESARGI PORTFOLIO
+=========================== */
+
+:root{
+    --bg:#081120;
+    --card:rgba(255,255,255,0.08);
+    --text:#ffffff;
+    --accent:#7ee7ff;
+    --accent2:#7b61ff;
+    --shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+body.light{
+    --bg:#f5f7fb;
+    --card:#ffffff;
+    --text:#111111;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(
+    180deg,
+    #081120,
+    #0d1830);
+    color:var(--text);
+    overflow-x:hidden;
+    transition:.4s;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 60px;
+
+    backdrop-filter:blur(15px);
+
+    background:rgba(0,0,0,.25);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    color:var(--text);
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--accent);
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:100px 60px;
+}
+
+.hero-content{
+    width:100%;
+    max-width:1200px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero-text span{
+    background:linear-gradient(
+    90deg,
+    var(--accent),
+    var(--accent2));
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero-text h2{
+    color:var(--accent);
+    min-height:40px;
+}
+
+.hero-text p{
+    margin-top:15px;
+    font-size:18px;
+    max-width:600px;
+}
+
+.hero-image img{
+    width:350px;
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid var(--accent);
+
+    box-shadow:0 0 30px var(--accent);
+}
+
+/* BUTTONS */
+
+.btn{
+    display:inline-block;
+
+    margin-top:20px;
+    margin-right:10px;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    background:linear-gradient(
+    90deg,
+    var(--accent),
+    var(--accent2));
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* STATS */
+
+.stats{
+    margin-top:30px;
+
+    display:flex;
+    gap:20px;
+}
+
+.stat-card{
+    background:var(--card);
+
+    backdrop-filter:blur(10px);
+
+    padding:20px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    min-width:120px;
+
+    box-shadow:var(--shadow);
+}
+
+.stat-card h3{
+    color:var(--accent);
+}
+
+/* SECTION */
+
+.section{
+    width:90%;
+    max-width:1200px;
+
+    margin:80px auto;
+}
+
+.section-title{
+    text-align:center;
+
+    margin-bottom:40px;
+
+    font-size:40px;
+
+    color:var(--accent);
+}
+
+/* GLASS */
+
+.glass{
+    background:var(--card);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:var(--shadow);
+}
+
+/* SKILLS */
+
+.skills-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    gap:25px;
+}
+
+.skill-card{
+
+    background:var(--card);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:var(--shadow);
+}
+
+.skill-card i{
+    font-size:45px;
+
+    color:var(--accent);
+
+    margin-bottom:15px;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+}
+
+/* TIMELINE */
+
+.timeline-item{
+
+    background:var(--card);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+}
+
+/* PROJECT */
+
+.project-card{
+
+    background:var(--card);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:var(--shadow);
+}
+
+.project-card img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+}
+
+.project-card video{
+
+    width:100%;
+
+    border-radius:15px;
+
+    margin-top:20px;
+}
+
+/* CONTACT */
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+input,
+textarea{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    outline:none;
+}
+
+button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+    90deg,
+    var(--accent),
+    var(--accent2));
+
+    color:#fff;
+
+    font-size:16px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+
+    position:fixed;
+
+    bottom:25px;
+    right:25px;
+
+    width:65px;
+    height:65px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+
+    color:white;
+
+    text-decoration:none;
+
+    box-shadow:0 0 20px #25D366;
+
+    z-index:999;
+}
+
+/* THEME */
+
+.theme-btn{
+
+    position:fixed;
+
+    top:10px;
+    right:20px; 
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    z-index:2000;
+}
+
+/* RESPONSIVE */
+
+
+
+
+
+@media(max-width:900px){
+
+.hero-content{
+
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+
+    font-size:40px;
+}
+
+.hero-image img{
+
+    width:250px;
+    height:250px;
+}
+
+nav{
+
+    flex-direction:column;
+    gap:10px;
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+    justify-content:center;
+}
+}
